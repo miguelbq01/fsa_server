@@ -334,7 +334,7 @@ def dbconnect():
 			conn.commit()
 		return conn
 	elif DB_ENGINE=="mysql":
-		conn = MySQLdb.connect(host="localhost", user="ggpo", passwd="ggpo", db="ggposrv")
+		conn = MySQLdb.connect(host="dbinstances.cnymdj0gzk8b.us-east-1.rds.amazonaws.com", user="fsa_user", passwd="123123123123", db="fsa")
 		return conn
 
 class GGPOClient(SocketServer.BaseRequestHandler):
