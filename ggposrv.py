@@ -1540,7 +1540,6 @@ class GGPOClient(SocketServer.BaseRequestHandler):
 		Handle the initial setting of the user's nickname
 		"""
 		nick,password,port,version,sequence = params
-		ipdb.set_trace(context=10)
 		if replayonly:
 			self.finish()
 			return()
@@ -2642,8 +2641,8 @@ if __name__ == "__main__":
 
 	global ggposerver
 
-	print "-!- FightCade server version {0:.2f}".format(VERSION/100.0)
-	print "-!- (c) 2014-2015 Pau Oliva Fora (@pof) "
+	print "-!- FSA server version {0:.2f}".format(VERSION/100.0)
+	print "-!- (c) 2020 Miguel Bolanos "
 
 	#
 	# Parameter parsing
